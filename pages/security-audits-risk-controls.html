@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security, Audits, and Risk Controls | Travessia Docs</title>
+  <meta name="description" content="Travessia Credit documentation." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/images/travessia_logo_light.png" alt="Travessia logo" class="brand-logo" />
+      <span>Travessia Docs</span>
+    </a>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Docs navigation">
+      <div class="sidebar-title">Documentation</div>
+      <nav id="sidebar-nav">
+        <ul>
+          <li><a href="../index.html">Intro</a></li>
+          <li><a href="brazilian-grain-industry.html">The First Market</a></li>
+          <li><a href="tauri.html">The Operator</a></li>
+          <li><a href="the-vault.html">The Vault</a></li>
+          <li><a href="capital-lifecycle.html">The Capital Lifecycle</a></li>
+          <li><a href="travessia-token-tva.html">Travessia Token</a></li>
+          <li><a href="security-audits-risk-controls.html" class="active">Security, Audits, and Risk Controls</a></li>
+          <li><a href="transparency-reporting.html">Transparency and Reporting</a></li>
+          <li><a href="frequently-asked-questions.html">Frequently Asked Questions</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content-wrap">
+      <article id="content" class="content">
+        <h1 id="security-audits-and-risk-controls"><strong>Security, Audits, and Risk Controls</strong></h1>
+        <p>Travessia is designed with the assumption that trust must be earned through structure, transparency, and
+          verification rather than reputation or promises.</p>
+        <p>This section outlines how the protocol approaches security, auditing, and risk management across both
+          on-chain and real-world components.</p>
+        <hr />
+        <h2 id="smart-contract-security"><strong>Smart Contract Security</strong></h2>
+        <p>All core protocol logic is implemented through smart contracts that govern capital movement, yield accrual,
+          settlement timing, and withdrawals.</p>
+        <p>Contracts are designed to:</p>
+        <ul>
+          <li>enforce fixed deployment rules</li>
+          <li>remove discretionary control over user funds</li>
+          <li>ensure predictable capital behavior across cycles and epochs</li>
+          <li>clearly separate protocol enforcement from real-world execution</li>
+        </ul>
+        <p>Critical parameters such as deployment timing, accrual windows, and settlement requirements are enforced on
+          chain and cannot be modified arbitrarily.</p>
+        <hr />
+        <h2 id="independent-audits"><strong>Independent Audits</strong></h2>
+        <p>Travessia’s smart contracts are undergoing independent third-party security audits.</p>
+        <p>Audit coverage includes:</p>
+        <ul>
+          <li>vault logic and accounting</li>
+          <li>cycle and epoch enforcement</li>
+          <li>withdrawal and settlement mechanics</li>
+          <li>receipt token logic (where applicable)</li>
+          <li>access controls and upgrade paths</li>
+        </ul>
+        <p><strong>Audit Firm:</strong> \[To be published\] <strong>Audit Scope:</strong> \[To be published\]
+          <strong>Audit Reports:</strong> \[Links to be added\]</p>
+        <p>Once audits are complete, full reports will be published and linked here for public review.</p>
+        <hr />
+        <h2 id="operational-risk-and-real-world-execution"><strong>Operational Risk and Real-World Execution</strong>
+        </h2>
+        <p>Travessia does not rely on on-chain activity alone to generate returns. Capital is deployed into real-world
+          operations executed by professional counterparties.</p>
+        <p>Operational risk is managed through:</p>
+        <ul>
+          <li>short deployment cycles</li>
+          <li>continuous capital rotation</li>
+          <li>disciplined settlement timelines</li>
+          <li>limited exposure windows per transaction</li>
+          <li>predefined return obligations to the protocol</li>
+        </ul>
+        <p>The protocol does not warehouse inventory, extend long-term credit, or take directional exposure to commodity
+          prices.</p>
+        <hr />
+        <h2 id="hedging-and-market-risk-management"><strong>Hedging and Market Risk Management</strong></h2>
+        <p>To mitigate price volatility during execution, operators employ hedging strategies using established futures
+          markets.</p>
+        <p>Hedging is used to:</p>
+        <ul>
+          <li>protect margins between purchase and sale</li>
+          <li>reduce exposure to short-term price fluctuations</li>
+          <li>align execution outcomes with fixed settlement cycles</li>
+        </ul>
+        <p>Hedging is not used to increase leverage or amplify returns.</p>
+        <hr />
+        <h2 id="transparency-through-verified-data"><strong>Transparency Through Verified Data</strong></h2>
+        <p>Travessia is building a real-time transparency dashboard that provides visibility into underlying economic
+          activity.</p>
+        <p>This dashboard will surface:</p>
+        <ul>
+          <li>execution data supplied directly by Brazilian government sources</li>
+          <li>transaction attestations tied to real-world activity</li>
+          <li>aggregate volume, settlement, and throughput metrics</li>
+          <li>protocol-level performance indicators</li>
+        </ul>
+        <p>All data displayed will be verified and sourced from official public records rather than self-reported
+          metrics.</p>
+        <p>This system adds an additional layer of transparency and risk control by allowing users and investors to
+          independently observe the economic activity supporting protocol returns.</p>
+        <hr />
+        <h2 id="separation-of-duties-and-controls"><strong>Separation of Duties and Controls</strong></h2>
+        <p>Travessia is structured so that:</p>
+        <ul>
+          <li>smart contracts control capital rules</li>
+          <li>operators execute real-world activity</li>
+          <li>no single party can unilaterally change system behavior</li>
+        </ul>
+        <p>Operators cannot:</p>
+        <ul>
+          <li>modify accrual rules</li>
+          <li>extend settlement windows</li>
+          <li>delay capital return</li>
+          <li>alter withdrawal mechanics</li>
+        </ul>
+        <p>Likewise, protocol governance cannot directly execute real-world operations.</p>
+        <p>This separation reduces both technical and operational risk.</p>
+        <hr />
+        <h2 id="liquidity-and-redemption-risk"><strong>Liquidity and Redemption Risk</strong></h2>
+        <p>In Version One, liquidity is governed by cycle boundaries and settlement windows. Early exits are allowed but
+          priced explicitly to reflect real-world unwind costs.</p>
+        <p>In Version Two, liquidity is provided through secondary markets for vault receipt tokens. Pricing reflects
+          time remaining in active epochs, fees, and available liquidity rather than artificial guarantees.</p>
+        <p>This approach ensures that liquidity risk is surfaced transparently rather than hidden within protocol
+          assumptions.</p>
+        <hr />
+        <h2 id="known-risks-and-disclosures"><strong>Known Risks and Disclosures</strong></h2>
+        <p>As with any system bridging on-chain and real-world activity, risks exist.</p>
+        <p>These include, but are not limited to:</p>
+        <ul>
+          <li>smart contract vulnerabilities</li>
+          <li>operational execution risk</li>
+          <li>FX and settlement risk</li>
+          <li>counterparty risk</li>
+          <li>regulatory uncertainty</li>
+          <li>liquidity variability during early stages</li>
+        </ul>
+        <p>Travessia’s approach is to acknowledge these risks explicitly, structure the system to minimize them, and
+          provide transparency so participants can make informed decisions.</p>
+        <hr />
+        <h2 id="ongoing-improvements"><strong>Ongoing Improvements</strong></h2>
+        <p>Security and transparency are not static.</p>
+        <p>Travessia intends to:</p>
+        <ul>
+          <li>publish ongoing audit updates</li>
+          <li>expand transparency dashboards as data availability increases</li>
+          <li>improve monitoring and alerting systems</li>
+          <li>iterate on risk controls as the protocol scales</li>
+        </ul>
+        <p>These improvements are expected to evolve alongside product versions and additional vault deployments.</p>
+        <hr />
+        <h2 id="summary"><strong>Summary</strong></h2>
+        <p>Travessia’s security model is built on three pillars:</p>
+        <ul>
+          <li>deterministic on-chain enforcement</li>
+          <li>disciplined real-world execution</li>
+          <li>verifiable transparency</li>
+        </ul>
+        <p>Together, these elements provide the foundation required to generate large, repeatable, and uncorrelated
+          returns rooted in essential industries.</p>
+        <hr />
+              <nav class="page-nav" aria-label="Page navigation">
+          <a class="next-page-button" href="transparency-reporting.html">Next: Transparency and Reporting &rarr;</a>
+        </nav>
+</article>
+    </main>
+  </div>
+</body>
+
+</html>

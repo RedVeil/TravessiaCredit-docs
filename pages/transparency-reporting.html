@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transparency and Reporting | Travessia Docs</title>
+  <meta name="description" content="Travessia Credit documentation." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/images/travessia_logo_light.png" alt="Travessia logo" class="brand-logo" />
+      <span>Travessia Docs</span>
+    </a>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Docs navigation">
+      <div class="sidebar-title">Documentation</div>
+      <nav id="sidebar-nav">
+        <ul>
+          <li><a href="../index.html">Intro</a></li>
+          <li><a href="brazilian-grain-industry.html">The First Market</a></li>
+          <li><a href="tauri.html">The Operator</a></li>
+          <li><a href="the-vault.html">The Vault</a></li>
+          <li><a href="capital-lifecycle.html">The Capital Lifecycle</a></li>
+          <li><a href="travessia-token-tva.html">Travessia Token</a></li>
+          <li><a href="security-audits-risk-controls.html">Security, Audits, and Risk Controls</a></li>
+          <li><a href="transparency-reporting.html" class="active">Transparency and Reporting</a></li>
+          <li><a href="frequently-asked-questions.html">Frequently Asked Questions</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content-wrap">
+      <article id="content" class="content">
+        <h1 id="transparency-and-reporting"><strong>Transparency and Reporting</strong></h1>
+        <p>Travessia is designed with the assumption that trust must be verifiable.</p>
+        <p>Transparency is not treated as a marketing feature or an afterthought. It is a core system requirement that
+          spans on-chain enforcement, real-world execution, and third-party verification.</p>
+        <p>This section explains what data is visible, how it is sourced, and how reporting evolves as the protocol
+          matures.</p>
+        <hr />
+        <h2 id="on-chain-transparency"><strong>On-Chain Transparency</strong></h2>
+        <p>All core protocol activity is observable on chain.</p>
+        <p>This includes:</p>
+        <ul>
+          <li>vault balances and TVL</li>
+          <li>deposit and withdrawal activity</li>
+          <li>cycle and epoch state</li>
+          <li>yield accrual and settlement events</li>
+          <li>receipt token supply and transfers where applicable</li>
+        </ul>
+        <p>Smart contracts enforce these behaviors deterministically. Users do not need to trust intermediaries to
+          verify protocol-level activity.</p>
+        <hr />
+        <h2 id="real-world-activity-visibility"><strong>Real-World Activity Visibility</strong></h2>
+        <p>Because Travessia deploys capital into real-world operations, transparency must extend beyond the blockchain.
+        </p>
+        <p>To address this, Travessia is building a reporting system that surfaces real-world execution data alongside
+          on-chain metrics.</p>
+        <p>This system is designed to give users visibility into:</p>
+        <ul>
+          <li>the volume of underlying economic activity</li>
+          <li>settlement cadence and capital turnover</li>
+          <li>aggregate performance of deployed capital</li>
+          <li>alignment between on-chain cycles and off-chain execution</li>
+        </ul>
+        <hr />
+        <h2 id="government-verified-data-sources"><strong>Government-Verified Data Sources</strong></h2>
+        <p>A core component of Travessia’s transparency stack is a data dashboard built using information
+          <strong>verified and supplied directly by Brazilian government sources</strong>.
+        </p>
+        <p>Where available, official public records are used to:</p>
+        <ul>
+          <li>validate transaction activity</li>
+          <li>confirm volumes and settlement events</li>
+          <li>corroborate reported execution data</li>
+        </ul>
+        <p>This approach avoids reliance on self-reported metrics and introduces an external, independent verification
+          layer grounded in official records.</p>
+        <p>The dashboard is being built now and will expand progressively as additional data sources and attestations
+          are integrated.</p>
+        <hr />
+        <h2 id="data-integrity-and-controls"><strong>Data Integrity and Controls</strong></h2>
+        <p>The transparency system is designed with clear boundaries.</p>
+        <ul>
+          <li>On-chain data is sourced directly from smart contracts.</li>
+          <li>Off-chain execution data is sourced from operators and verified against public records where possible.
+          </li>
+          <li>Government-supplied data is used for corroboration, not interpretation.</li>
+        </ul>
+        <p>Travessia does not manipulate, smooth, or reinterpret reported figures. Data is presented as observed, with
+          clear sourcing and context.</p>
+        <hr />
+        <h2 id="reporting-cadence"><strong>Reporting Cadence</strong></h2>
+        <p>Reporting is expected to evolve in stages.</p>
+        <p>At launch, reporting focuses on:</p>
+        <ul>
+          <li>on-chain vault state</li>
+          <li>capital deployment and settlement status</li>
+          <li>high-level execution metrics</li>
+        </ul>
+        <p>Over time, reporting expands to include:</p>
+        <ul>
+          <li>deeper execution breakdowns</li>
+          <li>historical performance views</li>
+          <li>cross-cycle comparisons</li>
+          <li>additional third-party data integrations</li>
+        </ul>
+        <p>Each expansion is introduced deliberately to ensure accuracy and reliability.</p>
+        <hr />
+        <h2 id="transparency-as-a-risk-control"><strong>Transparency as a Risk Control</strong></h2>
+        <p>Transparency is not only informational. It functions as a risk control.</p>
+        <p>By making capital flows, execution cadence, and settlement behavior visible, Travessia:</p>
+        <ul>
+          <li>reduces information asymmetry</li>
+          <li>discourages hidden risk accumulation</li>
+          <li>enables early detection of deviations</li>
+          <li>allows participants to make informed decisions</li>
+        </ul>
+        <p>This visibility reinforces discipline across both protocol and operator layers.</p>
+        <hr />
+        <h2 id="limitations-and-disclosures"><strong>Limitations and Disclosures</strong></h2>
+        <p>Not all real-world data can be made perfectly real time or granular.</p>
+        <p>Certain reporting delays, aggregation thresholds, or redactions may exist due to:</p>
+        <ul>
+          <li>regulatory requirements</li>
+          <li>operational constraints</li>
+          <li>data availability limitations</li>
+        </ul>
+        <p>These limitations will be disclosed clearly wherever they apply.</p>
+        <p>Transparency is pursued aggressively, but never at the expense of accuracy or legal compliance.</p>
+        <hr />
+        <h2 id="summary"><strong>Summary</strong></h2>
+        <p>Travessia’s transparency model combines:</p>
+        <ul>
+          <li>deterministic on-chain enforcement</li>
+          <li>structured real-world reporting</li>
+          <li>independent verification using official government data</li>
+        </ul>
+        <p>This approach allows participants to observe not only what the protocol claims to do, but what is actually
+          happening beneath it.</p>
+        <p>Transparency is treated as infrastructure, not optics.</p>
+        <hr />
+              <nav class="page-nav" aria-label="Page navigation">
+          <a class="next-page-button" href="frequently-asked-questions.html">Next: Frequently Asked Questions &rarr;</a>
+        </nav>
+</article>
+    </main>
+  </div>
+</body>
+
+</html>

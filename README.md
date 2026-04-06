@@ -1,6 +1,8 @@
 # Travessia Credit Docs
 
-Static multi-page documentation site for Travessia Credit, based on the provided PDF content.
+Static GitBook-style documentation site for Travessia Credit.
+
+The docs are now fully pre-rendered as static HTML pages with a hardcoded sidebar.
 
 ## Local preview
 
@@ -25,11 +27,17 @@ Then visit [http://localhost:8000](http://localhost:8000).
 
 ## Files
 
-- `index.html` (landing page)
-- `overview.html`
-- `why-travessia-exists.html`
-- `what-travessia-is.html`
-- `what-travessia-is-not.html`
-- `styles.css`
-- `main.js`
+- `index.html` (root landing and Intro Travessia page)
+- `pages/brazilian-grain-industry.html`
+- `pages/tauri.html`
+- `pages/the-vault.html`
+- `pages/capital-lifecycle.html`
+- `pages/travessia-token-tva.html`
+- `pages/security-audits-risk-controls.html`
+- `pages/transparency-reporting.html`
+- `pages/frequently-asked-questions.html`
+- `docs.md` (optional source content reference)
+- `assets/css/styles.css` (layout and typography)
+- `assets/images/travessia_logo_light.png`
+- `assets/icons/favicon.ico`
 - `.nojekyll`

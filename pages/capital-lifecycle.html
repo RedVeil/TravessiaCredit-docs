@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capital LifeCycle | Travessia Docs</title>
+  <meta name="description" content="Travessia Credit documentation." />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="../index.html" class="brand">
+      <img src="../assets/images/travessia_logo_light.png" alt="Travessia logo" class="brand-logo" />
+      <span>Travessia Docs</span>
+    </a>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Docs navigation">
+      <div class="sidebar-title">Documentation</div>
+      <nav id="sidebar-nav">
+        <ul>
+          <li><a href="../index.html">Intro</a></li>
+          <li><a href="brazilian-grain-industry.html">The First Market</a></li>
+          <li><a href="tauri.html">The Operator</a></li>
+          <li><a href="the-vault.html">The Vault</a></li>
+          <li><a href="capital-lifecycle.html" class="active">The Capital Lifecycle</a></li>
+          <li><a href="travessia-token-tva.html">Travessia Token</a></li>
+          <li><a href="security-audits-risk-controls.html">Security, Audits, and Risk Controls</a></li>
+          <li><a href="transparency-reporting.html">Transparency and Reporting</a></li>
+          <li><a href="frequently-asked-questions.html">Frequently Asked Questions</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content-wrap">
+      <article id="content" class="content">
+        <h1 id="the-capital-lifecycle"><strong>The Capital Lifecycle</strong></h1>
+        <p>Travessia is designed around a clear separation of responsibilities.</p>
+        <p>Smart contracts govern the movement, timing, and ownership of capital on chain. Real world operators execute
+          economic activity off chain.</p>
+        <p>This section describes both layers in full, then shows how they connect into a single, repeatable capital
+          loop.</p>
+        <hr />
+        <h2 id="on-chain-capital-flow"><strong>On-Chain Capital Flow</strong></h2>
+        <h3 id="deposits-and-vault-entry"><strong>Deposits and Vault Entry</strong></h3>
+        <p>Users enter the system by depositing stablecoins into the Tauri Vault operated by <strong>Travessia
+            Credit</strong>.</p>
+        <p>Deposits are accepted into the next available deployment window. Capital only becomes active once the
+          relevant vault cycle or epoch begins. This ensures that all capital is deployed according to predefined rules
+          rather than discretionary timing.</p>
+        <p>Once capital enters an active deployment period, it becomes locked for the duration of that period and begins
+          accruing yield immediately.</p>
+        <hr />
+        <h3 id="cycles-epochs-and-yield-accrual"><strong>Cycles, Epochs, and Yield Accrual</strong></h3>
+        <p>Each deployment period operates under fixed parameters enforced by smart contracts.</p>
+        <p>Yield accrues continuously while capital is active. The protocol enforces when accrual begins, when it stops,
+          and when capital must be returned. These rules cannot be altered by operators or users.</p>
+        <p>Ownership of principal and yield is tracked on chain throughout the lifecycle. Depending on the vault
+          version, users hold positions directly or through receipt tokens that represent claims on active deployments.
+        </p>
+        <hr />
+        <h3 id="settlement-enforcement"><strong>Settlement Enforcement</strong></h3>
+        <p>At the end of a deployment period, yield accrual stops automatically.</p>
+        <p>Capital is then required to be returned on chain within a defined settlement window. Once capital has been
+          returned, users may either withdraw or roll their position forward into a subsequent deployment period.</p>
+        <p>At no point does the protocol rely on discretionary approval for settlement or redemption.</p>
+        <hr />
+        <h2 id="off-chain-execution-by-tauri"><strong>Off-Chain Execution by Tauri</strong></h2>
+        <p>Once capital leaves the vault, it is deployed by <strong>Tauri Agrícola</strong> into real world grain
+          operations.</p>
+        <p>From this point onward, capital is governed by real world operational constraints rather than financial
+          market behavior.</p>
+        <hr />
+        <h3 id="fx-and-local-deployment"><strong>FX and Local Deployment</strong></h3>
+        <p>Capital is received in stablecoin form and converted as required to meet local operating needs.</p>
+        <p>Tauri manages foreign exchange exposure as part of standard execution, ensuring that funds are available in
+          the appropriate currency to pay producers, logistics providers, and counterparties. FX handling is an
+          operational necessity, not a speculative activity.</p>
+        <hr />
+        <h3 id="transaction-execution-and-capital-rotation"><strong>Transaction Execution and Capital Rotation</strong>
+        </h3>
+        <p>Tauri deploys capital into short duration spot grain transactions.</p>
+        <p>These transactions involve purchasing grain from producers, coordinating logistics, managing storage and
+          delivery, and settling sales with buyers. Capital is recycled repeatedly across transactions during a
+          deployment period, maximizing velocity.</p>
+        <p>Margins are generated through disciplined execution, pricing efficiency, and speed of settlement rather than
+          directional market bets.</p>
+        <hr />
+        <h3 id="risk-management-and-hedging"><strong>Risk Management and Hedging</strong></h3>
+        <p>To manage price exposure between purchase and sale, Tauri employs hedging strategies using established
+          futures markets.</p>
+        <p>Hedging is used to reduce volatility and protect margins during execution. It is not used to increase
+          leverage or amplify returns.</p>
+        <p>This ensures predictable outcomes aligned with fixed settlement timelines.</p>
+        <hr />
+        <h3 id="profit-realization-and-capital-return"><strong>Profit Realization and Capital Return</strong></h3>
+        <p>As transactions settle, profits are realized alongside principal.</p>
+        <p>At the end of each deployment period, Tauri returns principal and realized yield back to the protocol within
+          the predefined settlement window. Smart contracts then distribute yield to users on chain according to their
+          positions.</p>
+        <hr />
+        <h2 id="withdrawals-and-liquidity-in-version-one"><strong>Withdrawals and Liquidity in Version One</strong></h2>
+        <p>Withdrawals in Version One of the Tauri Vault are governed entirely by smart contract rules designed to
+          balance user flexibility with real world execution constraints .</p>
+        <p>The protocol supports two withdrawal paths: regular withdrawals at cycle completion and early withdrawals
+          during an active cycle.</p>
+        <hr />
+        <h3 id="regular-withdrawals"><strong>Regular Withdrawals</strong></h3>
+        <p>Regular withdrawals occur at the natural end of a deployment cycle.</p>
+        <p>Users may request a withdrawal at any point during the cycle, provided the request is submitted no later than
+          ten days before the cycle ends. This advance notice allows capital to be settled cleanly from real world
+          operations.</p>
+        <p>At cycle completion, yield accrual stops automatically. Tauri then has up to five days to return principal
+          and accrued yield on chain. Once returned, users may claim their funds directly from the vault.</p>
+        <p>Regular withdrawals incur no fees. Users receive their full principal plus the full yield accrued over the
+          cycle.</p>
+        <hr />
+        <h3 id="early-withdrawals"><strong>Early Withdrawals</strong></h3>
+        <p>Early withdrawals allow users to exit an active cycle before completion.</p>
+        <p>When an early withdrawal is requested, yield accrual stops immediately. Capital is then unwound from real
+          world operations according to predefined rules.</p>
+        <p>Because early exits require disrupting active execution, an instant penalty is applied as a haircut to the
+          total position value. This reflects execution costs and opportunity cost to the system.</p>
+        <p>Following an early withdrawal request, Tauri has up to fourteen days to unwind positions, settle
+          transactions, and return capital on chain. Users may claim their remaining funds once settlement completes.
+        </p>
+        <hr />
+        <h3 id="why-withdrawal-rules-exist"><strong>Why Withdrawal Rules Exist</strong></h3>
+        <p>Capital deployed into real world grain operations cannot always be recalled instantly without cost.</p>
+        <p>The protocol makes this explicit rather than masking it behind artificial liquidity guarantees. By pricing
+          early exits and enforcing notice periods, the system protects remaining participants and preserves operational
+          integrity.</p>
+        <hr />
+        <h2 id="evolution-to-version-two-liquidity"><strong>Evolution to Version Two Liquidity</strong></h2>
+        <p>Version One withdrawals occur directly through the vault and are aligned with deployment cycles.</p>
+        <p>Version Two introduces instant liquidity through secondary market trading of vault receipt tokens. These
+          receipt tokens represent claims on capital deployed across active epochs and can be traded in on chain
+          liquidity pools.</p>
+        <p>Users may exit positions instantly at market prices, with discounts reflecting remaining time in active
+          epochs, fees, and available liquidity. Liquidity is provided by markets rather than guaranteed by the
+          protocol.</p>
+        <p>Version Two is scheduled to be live before the end of the year.</p>
+        <hr />
+        <h2 id="closing-the-loop"><strong>Closing the Loop</strong></h2>
+        <p>The capital lifecycle completes when funds return on chain and users either redeem or redeploy.</p>
+        <p>Capital enters the protocol, is deployed into essential industry operations, generates yield through real
+          world execution, and returns according to transparent, enforceable rules.</p>
+        <p>This loop is the foundation of Travessia. It is what allows the protocol to generate large, verifiable, and
+          uncorrelated returns rooted in essential industries rather than financial speculation.</p>
+        <hr />
+              <nav class="page-nav" aria-label="Page navigation">
+          <a class="next-page-button" href="travessia-token-tva.html">Next: Travessia Token $TVA &rarr;</a>
+        </nav>
+</article>
+    </main>
+  </div>
+</body>
+
+</html>
