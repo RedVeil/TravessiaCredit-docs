@@ -32,7 +32,6 @@ Then visit [http://localhost:8000](http://localhost:8000).
 - `pages/tauri.html`
 - `pages/the-vault.html`
 - `pages/capital-lifecycle.html`
-- `pages/travessia-token-tva.html`
 - `pages/security-audits-risk-controls.html`
 - `pages/transparency-reporting.html`
 - `pages/frequently-asked-questions.html`
